@@ -37,6 +37,21 @@ Capstone_project/
 - AMFI code validation completed (`fund_master` vs `nav_history`).
 - Data quality summary generated at `reports/day1_data_quality_summary.md`.
 
+## Day 2 Deliverables Completed
+
+- Cleaned all 10 Day 1 raw CSV datasets and saved outputs in `data/processed/`.
+- Built `src/day2_data_cleaning.py` to automate data cleaning and SQLite loading.
+- Created SQLite database `bluestock_mf.db` and schema file `schema.sql`.
+- Added analytical SQL queries in `queries.sql`.
+- Documented the schema and data definitions in `data_dictionary.md`.
+- Generated Day 2 report summary at `reports/day2_data_cleaning_summary.md`.
+
+## Run Day 2 pipeline
+
+```bash
+python src/day2_data_cleaning.py
+```
+
 ## Setup
 
 Create and activate a virtual environment, then install dependencies:
