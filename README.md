@@ -11,10 +11,13 @@ Capstone_project/
 |   `-- processed/      # cleaned/derived outputs (future days)
 |-- src/
 |   |-- data_ingestion.py
-|   `-- live_nav_fetch.py
+|   |-- live_nav_fetch.py
+|   `-- day3_eda.py
 |-- reports/
-|   `-- day1_data_quality_summary.md
-|-- notebooks/          # analysis notebooks (future days)
+|   |-- day1_data_quality_summary.md
+|   |-- day2_data_cleaning_summary.md
+|   `-- day3_eda_summary.md
+|-- notebooks/          # analysis notebooks and Day 3 EDA deliverables
 |-- sql/                # SQL scripts (future days)
 |-- dashboard/          # dashboard app (future days)
 |-- requirements.txt
@@ -46,10 +49,23 @@ Capstone_project/
 - Documented the schema and data definitions in `data_dictionary.md`.
 - Generated Day 2 report summary at `reports/day2_data_cleaning_summary.md`.
 
+## Day 3 Deliverables Completed
+
+- Built `src/day3_eda.py` to perform exploratory data analysis and export visualizations.
+- Created Day 3 notebook deliverables at `notebooks/EDA_Analysis.ipynb` and `notebooks/EDA_Analysis_executed.ipynb`.
+- Generated Day 3 summary report at `reports/day3_eda_summary.md`.
+- Exported charts to `notebooks/plots/` including NAV trends, AUM growth, SIP trend, demographic distributions, geographic SIP analysis, folio growth, fund return correlations, and sector allocation.
+
 ## Run Day 2 pipeline
 
 ```bash
 python src/day2_data_cleaning.py
+```
+
+## Run Day 3 EDA
+
+```bash
+python src/day3_eda.py
 ```
 
 ## Setup

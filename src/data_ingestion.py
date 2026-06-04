@@ -70,7 +70,7 @@ def explore_fund_master(fund_master: pd.DataFrame) -> dict[str, object]:
     print("\n=== Fund Master Exploration ===")
     for key, value in summary.items():
         print(f"{key}: {value}")
-    return summary
+    return summary  # pyright: ignore[reportReturnType]
 
 
 def validate_amfi_codes(
