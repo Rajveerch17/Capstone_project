@@ -56,6 +56,12 @@ Capstone_project/
 - Generated Day 3 summary report at `reports/day3_eda_summary.md`.
 - Exported charts to `notebooks/plots/` including NAV trends, AUM growth, SIP trend, demographic distributions, geographic SIP analysis, folio growth, fund return correlations, and sector allocation.
 
+## Day 4 Deliverables Completed
+
+- Added `src/day4_fund_performance.py` to compute daily returns, CAGR, Sharpe, Sortino, alpha/beta, maximum drawdown, tracking error, and a fund scorecard.
+- Created `notebooks/Performance_Analytics.ipynb` for the Day 4 analytics workflow.
+- Generated `fund_scorecard.csv`, `alpha_beta.csv`, `performance_comparison.csv`, and `notebooks/plots/benchmark_comparison_chart.png`.
+
 ## Run Day 2 pipeline
 
 ```bash
@@ -66,6 +72,12 @@ python src/day2_data_cleaning.py
 
 ```bash
 python src/day3_eda.py
+```
+
+## Run Day 4 Analytics
+
+```bash
+python src/day4_fund_performance.py
 ```
 
 ## Setup
