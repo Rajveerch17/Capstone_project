@@ -16,10 +16,11 @@ Capstone_project/
 |-- reports/
 |   |-- day1_data_quality_summary.md
 |   |-- day2_data_cleaning_summary.md
-|   `-- day3_eda_summary.md
+|   |-- day3_eda_summary.md
+|   `-- day5_dashboard_summary.md
 |-- notebooks/          # analysis notebooks and Day 3 EDA deliverables
 |-- sql/                # SQL scripts (future days)
-|-- dashboard/          # dashboard app (future days)
+|-- dashboard/          # dashboard app and Day 5 deliverables
 |-- requirements.txt
 `-- README.md
 ```
@@ -61,6 +62,13 @@ Capstone_project/
 - Added `src/day4_fund_performance.py` to compute daily returns, CAGR, Sharpe, Sortino, alpha/beta, maximum drawdown, tracking error, and a fund scorecard.
 - Created `notebooks/Performance_Analytics.ipynb` for the Day 4 analytics workflow.
 - Generated `fund_scorecard.csv`, `alpha_beta.csv`, `performance_comparison.csv`, and `notebooks/plots/benchmark_comparison_chart.png`.
+
+## Day 5 Deliverables Completed
+
+- Built `src/day5_dashboard.py` to generate the Day 5 dashboard and export charts.
+- Created `dashboard/bluestock_dashboard.html` and `dashboard/bluestock_dashboard.pdf` for the final report.
+- Added `dashboard/README.md` to document the dashboard deliverable and export files.
+- Generated PNG export files for all four Day 5 dashboard pages in `dashboard/`.
 
 ## Run Day 2 pipeline
 
