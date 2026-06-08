@@ -80,6 +80,12 @@ python src/day3_eda.py
 python src/day4_fund_performance.py
 ```
 
+## Run Day 5 Dashboard
+
+```bash
+python src/day5_dashboard.py
+```
+
 ## Setup
 
 Create and activate a virtual environment, then install dependencies:
