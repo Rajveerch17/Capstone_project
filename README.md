@@ -17,8 +17,10 @@ Capstone_project/
 |   |-- day1_data_quality_summary.md
 |   |-- day2_data_cleaning_summary.md
 |   |-- day3_eda_summary.md
-|   `-- day5_dashboard_summary.md
-|-- notebooks/          # analysis notebooks and Day 3 EDA deliverables
+|   |-- day4_fund_performance_summary.md
+|   |-- day5_dashboard_summary.md
+|   |-- day6_advanced_analytics_summary.md
+|-- notebooks/          # analysis notebooks and Day 3/Day 6 deliverables
 |-- sql/                # SQL scripts (future days)
 |-- dashboard/          # dashboard app and Day 5 deliverables
 |-- requirements.txt
@@ -70,6 +72,13 @@ Capstone_project/
 - Added `dashboard/README.md` to document the dashboard deliverable and export files.
 - Generated PNG export files for all four Day 5 dashboard pages in `dashboard/`.
 
+## Day 6 Deliverables Completed
+
+- Built `src/day6_advanced_analytics.py` to compute historical VaR/CVaR, rolling Sharpe, investor cohorts, SIP continuity flags, and sector HHI.
+- Added `src/recommender.py` for a simple risk-grade-based fund recommendation engine.
+- Created `notebooks/Advanced_Analytics.ipynb` and executed `notebooks/Advanced_Analytics_executed.ipynb` with output graphs.
+- Generated `var_cvar_report.csv`, `cohort_analysis.csv`, `sip_continuity_report.csv`, `sector_hhi_report.csv`, and `rolling_sharpe_chart.png`.
+
 ## Run Day 2 pipeline
 
 ```bash
@@ -92,6 +101,18 @@ python src/day4_fund_performance.py
 
 ```bash
 python src/day5_dashboard.py
+```
+
+## Run Day 6 Advanced Analytics
+
+```bash
+python src/day6_advanced_analytics.py
+```
+
+## Run Fund Recommender
+
+```bash
+python src/recommender.py Moderate
 ```
 
 ## Setup
