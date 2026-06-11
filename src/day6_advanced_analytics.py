@@ -1,3 +1,20 @@
+"""
+Day 6 Advanced Analytics Module
+================================
+Perform advanced risk analysis, investor cohort behavior, and portfolio optimization.
+Generate risk metrics (VaR, CVaR), investor cohort analysis, and sector concentration indices.
+
+This module:
+- Loads NAV, transactions, holdings, and fund master data
+- Computes Value at Risk (VaR) and Conditional VaR (CVaR) at 95% confidence level
+- Calculates rolling 90-day Sharpe ratios for top performers
+- Analyzes investor cohorts by first transaction year (SIP patterns, fund preferences)
+- Identifies SIP continuity risks (long gaps, inconsistent behavior)
+- Computes Herfindahl-Hirschman Index (HHI) for sector concentration in each equity fund
+- Provides simple fund recommender based on risk appetite (Low/Moderate/High)
+- Saves all analysis outputs as CSV files for reporting and downstream use
+"""
+
 from __future__ import annotations
 
 from pathlib import Path

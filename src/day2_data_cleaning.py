@@ -1,3 +1,18 @@
+"""
+Day 2 ETL - Data Cleaning & Validation Module
+==============================================
+Clean, validate, and standardize the 10 raw mutual fund datasets.
+Generates processed CSV outputs and creates SQLite database schema.
+
+This module:
+- Cleans each of the 10 raw datasets (fund master, NAV, AUM, SIP, transactions, etc.)
+- Standardizes data types, handles missing values, and removes duplicates
+- Expands NAV history to include all trading days (forward-fill missing dates)
+- Saves cleaned datasets to the processed directory
+- Generates SQLite database schema for data warehousing
+- Creates data dictionary and query templates
+"""
+
 from __future__ import annotations
 
 from pathlib import Path

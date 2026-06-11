@@ -1,3 +1,20 @@
+"""
+Day 4 Fund Performance Analytics Module
+=======================================
+Compute comprehensive risk and performance metrics for all mutual fund schemes.
+Generate fund scorecard rankings, alpha-beta analysis, and comparison tables.
+
+This module:
+- Loads NAV, benchmark index, and fund master data
+- Computes daily returns and annualized performance metrics (CAGR, volatility, Sharpe ratio)
+- Calculates alpha and beta against NIFTY100 benchmark
+- Estimates maximum drawdowns and recovery periods
+- Builds fund scorecard with composite risk-adjusted performance rankings
+- Ranks funds by 3-year CAGR, Sharpe ratio, alpha, expense ratio, and max drawdown
+- Generates alpha-beta scatter plots and performance comparison tables
+- Saves performance metrics to CSV for downstream reporting
+"""
+
 from __future__ import annotations
 
 from pathlib import Path

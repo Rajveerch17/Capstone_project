@@ -1,3 +1,21 @@
+"""
+Day 5 Interactive Dashboard Module
+==================================
+Build multi-page interactive dashboard visualizations of mutual fund analytics.
+Generate publication-ready HTML dashboards with KPIs, performance charts, and heatmaps.
+
+This module:
+- Loads cleaned mutual fund and transaction datasets
+- Applies Bluestock brand color scheme and styling
+- Builds KPI indicators (total AUM, SIP inflows, active folios, scheme count)
+- Creates Page 1: Industry overview with AUM trends and AMC rankings
+- Creates Page 2: Fund performance with risk-return scatter plots and top-15 scorecard
+- Creates Page 3: Investor demographics with SIP trends by state, age, gender
+- Creates Page 4: Category and sector analysis with inflow trends and allocation heatmaps
+- Combines all pages into a single multi-tab dashboard HTML file
+- Exports both HTML and static PNG images of all visualizations
+"""
+
 from __future__ import annotations
 
 from pathlib import Path

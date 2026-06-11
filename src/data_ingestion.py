@@ -1,3 +1,17 @@
+"""
+Day 1 ETL - Data Ingestion Module
+==================================
+Load, profile, and validate the 10 provided mutual fund datasets from the raw data directory.
+Performs initial data quality checks and validates AMFI code consistency across datasets.
+
+This module:
+- Loads the 10 Day 1 CSV datasets (fund master, NAV history, AUM, SIP, etc.)
+- Profiles each dataset (shape, dtypes, missing values, duplicates)
+- Explores fund master dimensions (fund houses, categories, risk grades)
+- Validates that all AMFI codes in fund_master exist in nav_history
+- Generates a data quality summary report
+"""
+
 from pathlib import Path
 
 import pandas as pd

@@ -1,3 +1,20 @@
+"""
+Day 3 EDA - Exploratory Data Analysis Module
+=============================================
+Generate comprehensive exploratory visualizations of mutual fund datasets.
+Creates interactive HTML charts and static PNG images for dashboard and reports.
+
+This module:
+- Loads cleaned datasets (fund master, NAV, AUM, SIP, transactions, holdings, etc.)
+- Generates NAV trend visualization (all 40 schemes with market annotations)
+- Analyzes AUM growth by fund house (bar chart with year-over-year comparison)
+- Visualizes monthly SIP inflows with peak annotations
+- Creates category inflow heatmaps showing sector trends
+- Analyzes investor demographics (age, gender, state distribution)
+- Computes folio growth metrics and sector allocation patterns
+- Saves all visualizations as both interactive HTML and static PNG files
+"""
+
 from typing import Any, cast
 
 import pandas as pd

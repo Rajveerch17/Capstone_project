@@ -1,3 +1,16 @@
+"""
+Live NAV Fetch Module
+=====================
+Fetch live Net Asset Value (NAV) data from mfapi.in for selected mutual fund schemes.
+Saves the historical NAV data as CSV files in the raw data directory.
+
+This module:
+- Builds a resilient HTTP session with retry logic for transient failures
+- Fetches NAV data from mfapi.in REST API for 6 bluechip schemes
+- Saves each scheme's NAV history as a separate CSV file
+- Handles API errors and connection failures gracefully
+"""
+
 from pathlib import Path
 
 import pandas as pd

@@ -1,3 +1,23 @@
+"""
+Fund Recommender System Module
+==============================
+Simple rule-based fund recommendation engine based on investor risk appetite.
+Suggests top-3 funds for Low, Moderate, or High risk profiles using Sharpe ratio.
+
+This module:
+- Loads scheme performance data with risk grades and Sharpe ratios
+- Maps risk appetite (Low/Moderate/High) to SEBI risk categories
+- Filters eligible funds for the selected risk appetite
+- Ranks by Sharpe ratio (risk-adjusted return) to select top 3 recommendations
+- Displays key metrics (AMFI code, scheme name, Sharpe ratio, max drawdown, AUM)
+- Provides a command-line interface for interactive recommendations
+
+Usage:
+    python recommender.py Low      # Recommend low-risk funds
+    python recommender.py Moderate # Recommend moderate-risk funds
+    python recommender.py High     # Recommend high-risk funds
+"""
+
 from __future__ import annotations
 
 from pathlib import Path
